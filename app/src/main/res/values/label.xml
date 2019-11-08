@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_solar_panel">Solar Panel</string>
+    <string name="label_default_solar_panel">Default Solar Panel</string>
+    <string name="label_cell">Cell</string>
+    <string name="label_60">60</string>
+    <string name="label_60_cell_solar_modules">60 Cell Solar Modules</string>
+</resources>

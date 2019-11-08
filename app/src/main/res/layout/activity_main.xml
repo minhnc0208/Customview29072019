@@ -1,43 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearContain"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:hint="60 Cell Solar Modules" />
-
+        android:layout_height="wrap_content">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text="Cell"
-            android:textColor="#000000" />
-
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#0A0A0A"
+            android:textSize="25sp"
+            android:text="@string/label_solar_panel"
+            android:id="@+id/textviewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text="96"
-            android:textColor="#989898" />
+            android:layout_below="@id/textviewTitle"
+            android:textColor="#0A0A0A"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_default_solar_panel"
+            android:id="@+id/textviewDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@+id/linearContain"
-        android:background="#989898" />
-</RelativeLayout>
+</ScrollView>
